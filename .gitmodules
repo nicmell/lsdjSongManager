@@ -1,0 +1,3 @@
+[submodule "libLSDJ"]
+	path = libLSDJ
+	url = https://github.com/stijnfrishert/libLSDJ
