@@ -34,12 +34,11 @@ win32 {
     LIBS += "C:/Users/Nicholas St.Pierre/Code/BUILT/lib/lsdj.lib"
 }
 
-unix {
-    # note: don't install liblsdj to the same place as brew: there are serious image library conflicts
-    LIBS += /opt/nick/lib/liblsdj.a
+macx {
+    LIBS += ./libLSDJ/build/liblsdj/liblsdj.a
 }
 
-INCLUDEPATH += /opt/nick/include
+INCLUDEPATH += ./libLSDJ
 
 SOURCES += \
         main.cpp \
